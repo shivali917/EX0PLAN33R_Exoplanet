@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1UZjGhRKA_W02R6pybswq4Wg1OeQKryow
 """
 
-!git clone https://github.com/ismael-araujo/Finding-Exoplanet-Using-Machine-Learning
 
 # Commented out IPython magic to ensure Python compatibility.
 # Import packages
@@ -29,7 +28,7 @@ from sklearn import metrics
 from sklearn.metrics import mean_squared_error, precision_score, confusion_matrix, accuracy_score
 
 import pandas as pd
-df = pd.read_csv('/content/Finding-Exoplanet-Using-Machine-Learning/exoplanets_2018.csv')
+df = pd.read_csv('exoplanets_2018.csv')
 
 df = df.rename(columns={'kepid':'KepID',
 'kepoi_name':'KOIName',
